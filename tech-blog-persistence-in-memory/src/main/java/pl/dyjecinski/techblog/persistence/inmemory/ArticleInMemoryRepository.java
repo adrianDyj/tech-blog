@@ -1,10 +1,12 @@
 package pl.dyjecinski.techblog.persistence.inmemory;
 
+import org.springframework.stereotype.Repository;
 import pl.dyjecinski.techblog.domain.article.Article;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class ArticleInMemoryRepository {
 
     private static List<Article> articleDatabase = new ArrayList<>();

@@ -1,11 +1,13 @@
 package pl.dyjecinski.techblog.persistence.inmemory;
 
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import pl.dyjecinski.techblog.domain.article.Article;
 import pl.dyjecinski.techblog.domain.article.ArticlePersistencePort;
 
 import java.util.List;
 
+@Service
 @AllArgsConstructor
 public class ArticlePersistenceAdapter implements ArticlePersistencePort {
 
