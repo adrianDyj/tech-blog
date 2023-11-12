@@ -22,7 +22,6 @@ public class ArticlePageController {
     public String getArticleList(Model model) {
         List<Article> articles = articleService.getAll();
         model.addAttribute("articles", articles);
-        model.addAttribute("articles", articles);
         return "article_list";
     }
 

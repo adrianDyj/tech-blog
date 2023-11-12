@@ -12,11 +12,11 @@ public class ArticleInMemoryRepository {
     private static List<Article> articleDatabase = new ArrayList<>();
 
     static {
-        articleDatabase.add(new Article(1, "Article 1", "Descritpion 1"));
-        articleDatabase.add(new Article(2, "Article 2", "Descritpion 2"));
-        articleDatabase.add(new Article(3, "Article 3", "Descritpion 3"));
-        articleDatabase.add(new Article(4, "Article 4", "Descritpion 4"));
-        articleDatabase.add(new Article(5, "Article 5", "Descritpion 5"));
+        articleDatabase.add(new Article(1, "Article 1", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."));
+        articleDatabase.add(new Article(2, "Article 2", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."));
+        articleDatabase.add(new Article(3, "Article 3", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."));
+        articleDatabase.add(new Article(4, "Article 4", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."));
+        articleDatabase.add(new Article(5, "Article 5", "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."));
     }
 
     public void add(Article article) {

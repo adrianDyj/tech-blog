@@ -36,4 +36,11 @@ public class ArticleService {
         return new ArrayList<>();
     }
 
+    public List<Article> getHottest() {
+        List<Article> articles = articlePersistencePort.getAll();
+        return articles.stream()
+                .limit(3)
+                .toList();
+    }
+
 }
