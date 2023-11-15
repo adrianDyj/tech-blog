@@ -7,92 +7,101 @@
 
 <main>
 
-    <div>
-        <section class="py-5 text-center container">
+    <div class="bg-body-tertiary">
+        <section class="py-1 container">
             <div class="row py-lg-5">
-                <div class="col-lg-6 col-md-8 mx-auto">
+                <div class="col-lg-6 col-md-8">
                     <h1 class="fw-light">Blog technologiczny</h1>
                     <p class="lead text-body-secondary">
                         Witaj na JavaTech! Tu odkryjesz świat niekończących się możliwości języka Java.
                         Trendy, praktyczne wskazówki, i fascynujące kodowanie – wszystko w jednym miejscu.
                         Gotowy na rozpoczęcie tej programistycznej podróży? Zapraszam do eksploracji! #Java #TechBlog
                     </p>
-                    <p>
-                        <a href="#" class="btn btn-outline-success my-2">Zacznij tutaj</a>
-                        <a href="#" class="btn btn-secondary my-2">Skontaktuj się</a>
-                    </p>
                 </div>
             </div>
         </section>
     </div>
 
-    <div class="album py-5 bg-body-tertiary">
+    <div class="album py-5 ">
         <div class="container">
 
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div th:each="article: ${articles}" class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c"/>
-                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                        </svg>
-                        <div class="card-body">
-                            <p th:text="${article.description}" class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-body-secondary">9 mins</small>
-                            </div>
-                        </div>
+            <div th:each="article : ${articles}" class="col-8 mb-3 mb-sm-0">
+                <div class="card px-3 mb-3 py-3">
+                    <div class="card-body">
+                        <p class="text-secondary mb-0">10.11.2023</p>
+                        <h3 th:text="${article.title}" class="card-title mb-3">Special title treatment</h3>
+                        <p th:text="${article.description}" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="/articles/1">Więcej</a>
                     </div>
                 </div>
-<!--                <div class="col">-->
-<!--                    <div class="card shadow-sm">-->
-<!--                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"-->
-<!--                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"-->
-<!--                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>-->
-<!--                            <rect width="100%" height="100%" fill="#55595c"/>-->
-<!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>-->
-<!--                        </svg>-->
-<!--                        <div class="card-body">-->
-<!--                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to-->
-<!--                                additional content. This content is a little bit longer.</p>-->
-<!--                            <div class="d-flex justify-content-between align-items-center">-->
-<!--                                <div class="btn-group">-->
-<!--                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
-<!--                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>-->
-<!--                                </div>-->
-<!--                                <small class="text-body-secondary">9 mins</small>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col">-->
-<!--                    <div class="card shadow-sm">-->
-<!--                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"-->
-<!--                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"-->
-<!--                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>-->
-<!--                            <rect width="100%" height="100%" fill="#55595c"/>-->
-<!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>-->
-<!--                        </svg>-->
-<!--                        <div class="card-body">-->
-<!--                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to-->
-<!--                                additional content. This content is a little bit longer.</p>-->
-<!--                            <div class="d-flex justify-content-between align-items-center">-->
-<!--                                <div class="btn-group">-->
-<!--                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
-<!--                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>-->
-<!--                                </div>-->
-<!--                                <small class="text-body-secondary">9 mins</small>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
+
+
+
+            <!--            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">-->
+<!--                <div th:each="article: ${articles}" class="col">-->
+<!--                    <div class="card shadow-sm">-->
+<!--                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"-->
+<!--                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"-->
+<!--                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>-->
+<!--                            <rect width="100%" height="100%" fill="#55595c"/>-->
+<!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>-->
+<!--                        </svg>-->
+<!--                        <div class="card-body">-->
+<!--                            <p th:text="${article.description}" class="card-text"></p>-->
+<!--                            <div class="d-flex justify-content-between align-items-center">-->
+<!--                                <div class="btn-group">-->
+<!--                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+<!--                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>-->
+<!--                                </div>-->
+<!--                                <small class="text-body-secondary">9 mins</small>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--&lt;!&ndash;                <div class="col">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="card shadow-sm">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"&ndash;&gt;-->
+<!--&lt;!&ndash;                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"&ndash;&gt;-->
+<!--&lt;!&ndash;                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <rect width="100%" height="100%" fill="#55595c"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </svg>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="card-body">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to&ndash;&gt;-->
+<!--&lt;!&ndash;                                additional content. This content is a little bit longer.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="d-flex justify-content-between align-items-center">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="btn-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <small class="text-body-secondary">9 mins</small>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="card shadow-sm">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"&ndash;&gt;-->
+<!--&lt;!&ndash;                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"&ndash;&gt;-->
+<!--&lt;!&ndash;                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <rect width="100%" height="100%" fill="#55595c"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </svg>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="card-body">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to&ndash;&gt;-->
+<!--&lt;!&ndash;                                additional content. This content is a little bit longer.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="d-flex justify-content-between align-items-center">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="btn-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <small class="text-body-secondary">9 mins</small>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--            </div>-->
         </div>
     </div>
 
