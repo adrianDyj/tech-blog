@@ -25,83 +25,59 @@
     <div class="album py-5 ">
         <div class="container">
 
-            <div th:each="article : ${articles}" class="col-8 mb-3 mb-sm-0">
-                <div class="card px-3 mb-3 py-3">
-                    <div class="card-body">
-                        <p class="text-secondary mb-0">10.11.2023</p>
-                        <h3 th:text="${article.title}" class="card-title mb-3">Special title treatment</h3>
-                        <p th:text="${article.description}" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="/articles/1">Więcej</a>
+            <div class="row">
+                <div class="col-9 mb-3 mb-sm-0">
+                    <div th:each="article : ${articles}" class="card px-3 mb-3 py-3">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">10.11.2023</p>
+                            <h3 th:text="${article.title}" class="card-title mb-3">Special title treatment</h3>
+                            <p th:text="${article.description}" class="card-text">With supporting text below as a
+                                natural lead-in to additional content.</p>
+                            <a href="/articles/1">Więcej</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="list-group mb-3">
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                            <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32"
+                                 class="rounded-circle flex-shrink-0">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">List group item heading</h6>
+                                    <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+                                </div>
+                                <small class="opacity-50 text-nowrap">now</small>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                            <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32"
+                                 class="rounded-circle flex-shrink-0">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">Another title here</h6>
+                                    <p class="mb-0 opacity-75">Some placeholder content in a paragraph that goes a little
+                                        longer so it wraps to a new line.</p>
+                                </div>
+                                <small class="opacity-50 text-nowrap">3d</small>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                            <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32"
+                                 class="rounded-circle flex-shrink-0">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">Third heading</h6>
+                                    <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+                                </div>
+                                <small class="opacity-50 text-nowrap">1w</small>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-
-
-
-            <!--            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">-->
-<!--                <div th:each="article: ${articles}" class="col">-->
-<!--                    <div class="card shadow-sm">-->
-<!--                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"-->
-<!--                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"-->
-<!--                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>-->
-<!--                            <rect width="100%" height="100%" fill="#55595c"/>-->
-<!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>-->
-<!--                        </svg>-->
-<!--                        <div class="card-body">-->
-<!--                            <p th:text="${article.description}" class="card-text"></p>-->
-<!--                            <div class="d-flex justify-content-between align-items-center">-->
-<!--                                <div class="btn-group">-->
-<!--                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
-<!--                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>-->
-<!--                                </div>-->
-<!--                                <small class="text-body-secondary">9 mins</small>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--&lt;!&ndash;                <div class="col">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <div class="card shadow-sm">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"&ndash;&gt;-->
-<!--&lt;!&ndash;                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"&ndash;&gt;-->
-<!--&lt;!&ndash;                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <rect width="100%" height="100%" fill="#55595c"/>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </svg>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <div class="card-body">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to&ndash;&gt;-->
-<!--&lt;!&ndash;                                additional content. This content is a little bit longer.</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <div class="d-flex justify-content-between align-items-center">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <div class="btn-group">&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>&ndash;&gt;-->
-<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <small class="text-body-secondary">9 mins</small>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="col">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <div class="card shadow-sm">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"&ndash;&gt;-->
-<!--&lt;!&ndash;                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"&ndash;&gt;-->
-<!--&lt;!&ndash;                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <rect width="100%" height="100%" fill="#55595c"/>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </svg>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <div class="card-body">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to&ndash;&gt;-->
-<!--&lt;!&ndash;                                additional content. This content is a little bit longer.</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <div class="d-flex justify-content-between align-items-center">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <div class="btn-group">&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>&ndash;&gt;-->
-<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <small class="text-body-secondary">9 mins</small>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
-<!--            </div>-->
+            
         </div>
     </div>
 
