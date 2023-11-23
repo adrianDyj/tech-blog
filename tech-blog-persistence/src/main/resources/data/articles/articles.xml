@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Customer>
+    <Title>Title</Title>
+    <Version>23.11-001</Version>
+    <Articles>
+        <Article>
+            <Id>1</Id>
+            <Title>Co nowego w Java 15?</Title>
+            <Description>Java 15 swoją premierę miała 15 września 2020r. i wprowadziła szereg usprawnień do języka oraz całej platformy. Java 15 swoją premierę miała 15 września 2020r. i wprowadziła szereg usprawnień do języka oraz całej platformy.</Description>
+            <Content>34</Content>
+            <Conclusion>35</Conclusion>
+            <Category>35</Category>
+        </Article>
+        <Article>
+            <Id>2</Id>
+            <Title>Co nowego w Java 14?</Title>
+            <Description>Java 14 została oficjalnie udostępniona 17 marca 2020 roku i przynosi szereg usprawnień do języka. Niektóre ze zmian oznaczone są jako Preview Feature. Java 15 swoją premierę miała 15 września 2020r. i wprowadziła szereg usprawnień do języka oraz całej platformy.</Description>
+            <Content>35</Content>
+            <Conclusion>35</Conclusion>
+            <Category>35</Category>
+        </Article>
+        <Article>
+            <Id>3</Id>
+            <Title>Co nowego w Java 13?</Title>
+            <Description>Premiera Javy 13 zaplanowana jest na 17 września 2019 roku. Oprócz drobnych usprawnień planowane jest wprowadzenie 5 nowych funkcjonalności. Java 15 swoją premierę miała 15 września 2020r. i wprowadziła szereg usprawnień do języka oraz całej platformy.</Description>
+            <Content>35</Content>
+            <Conclusion>35</Conclusion>
+            <Category>35</Category>
+        </Article>
+        <Article>
+            <Id>4</Id>
+            <Title>Co nowego w Java 12?</Title>
+            <Description>Kolejna wersja Javy: Java 12, oficjalnie pod nazwą JDK 12 osiągnęła poziom w którym zamknięto zakres wprowadzanych funkcjonalności. Java 15 swoją premierę miała 15 września 2020r. i wprowadziła szereg usprawnień do języka oraz całej platformy.</Description>
+            <Content>35</Content>
+            <Conclusion>35</Conclusion>
+            <Category>35</Category>
+        </Article>
+        <Article>
+            <Id>5</Id>
+            <Title>Co nowego w Java 12?</Title>
+            <Description>Java 14 została oficjalnie udostępniona 17 marca 2020 roku i przynosi szereg usprawnień do języka. Niektóre ze zmian oznaczone są jako Preview Feature. Java 15 swoją premierę miała 15 września 2020r. i wprowadziła szereg usprawnień do języka oraz całej platformy.</Description>
+            <Content>35</Content>
+            <Conclusion>35</Conclusion>
+            <Category>35</Category>
+        </Article>
+        <Article>
+            <Id>6</Id>
+            <Title>Co nowego w Java 11?</Title>
+            <Description>Wraz z nowym cyklem wydawniczym Javy minęły zaledwie 3 miesiące od wydania Javy 10, a już doczekaliśmy się Javy 11. Java 15 swoją premierę miała 15 września 2020r. i wprowadziła szereg usprawnień do języka oraz całej platformy.</Description>
+            <Content>35</Content>
+            <Conclusion>35</Conclusion>
+            <Category>35</Category>
+        </Article>
+    </Articles>
+</Customer>

@@ -17,7 +17,7 @@
     <modules>
         <module>tech-blog-domain</module>
         <module>tech-blog-app</module>
-        <module>tech-blog-persistence-in-memory</module>
+        <module>tech-blog-persistence</module>
         <module>tech-blog-web</module>
         <module>tech-blog-docker</module>
     </modules>

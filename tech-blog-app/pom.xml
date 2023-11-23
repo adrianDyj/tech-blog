@@ -22,7 +22,7 @@
         </dependency>
         <dependency>
             <groupId>pl.dyjecinski.techblog</groupId>
-            <artifactId>tech-blog-persistence-in-memory</artifactId>
+            <artifactId>tech-blog-persistence</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>

@@ -13,11 +13,9 @@ public class ArticleService {
     private ArticlePersistencePort articlePersistencePort;
 
     public void add(Article article) {
-        articlePersistencePort.add(article);
     }
 
     public void delete(int id) {
-        articlePersistencePort.delete(id);
     }
 
     public List<Article> getAll() {
@@ -37,8 +35,8 @@ public class ArticleService {
     }
 
     public List<Article> getHottest() {
-        List<Article> articles = articlePersistencePort.getAll();
-        return articles.stream()
+        return articlePersistencePort.getAll()
+                .stream()
                 .limit(3)
                 .toList();
     }
