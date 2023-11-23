@@ -1,36 +1,32 @@
-package pl.dyjecinski.techblog.persistence.inmemory;
+package pl.dyjecinski.techblog.persistence.article;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.dyjecinski.techblog.domain.article.Article;
 import pl.dyjecinski.techblog.domain.article.ArticlePersistencePort;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 @AllArgsConstructor
 public class ArticlePersistenceAdapter implements ArticlePersistencePort {
 
-    private ArticleInMemoryRepository repository;
-
-    @Override
-    public void add(Article article) {
-        repository.add(article);
-    }
-
-    @Override
-    public void delete(int id) {
-        repository.delete(id);
-    }
+    private ArticleLoader articleLoader;
 
     @Override
     public List<Article> getAll() {
-        return repository.getAll();
+        ArticleWrapper articleWrapper = articleLoader.loadArticles();
+        List<Article> result = new ArrayList<>();
+        for (ArticleEntity entity : articleWrapper.getArticles()) {
+            result.add(new Article(entity.getId(), entity.getTitle(), entity.getDescription()));
+        }
+        return result;
     }
 
     @Override
     public Article getById(int id) {
-        return repository.getById(id);
+        return null;
     }
 
     @Override

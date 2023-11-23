@@ -11,16 +11,6 @@ public class ArticlePersistenceMock implements ArticlePersistencePort {
     private static final List<Article> articles = new ArrayList<>();
 
     @Override
-    public void add(Article article) {
-        articles.add(article);
-    }
-
-    @Override
-    public void delete(int id) {
-
-    }
-
-    @Override
     public List<Article> getAll() {
         return articles;
     }

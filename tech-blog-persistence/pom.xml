@@ -8,11 +8,21 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>tech-blog-persistence-in-memory</artifactId>
+    <artifactId>tech-blog-persistence</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>pl.dyjecinski.techblog</groupId>
             <artifactId>tech-blog-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
