@@ -5,44 +5,82 @@
 </head>
 <body>
 <div th:fragment="header">
-    <nav class="py-2 bg-body-tertiary border-bottom">
-        <div class="container d-flex flex-wrap">
-            <ul class="nav me-auto fs-6">
-                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">About</a></li>
-            </ul>
-            <ul class="nav fs-6">
-                <li class="nav-item">
-                    <a class="nav-link px-2 fs-6 text-secondary"><i class="bi bi-facebook"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-2 fs-6 text-secondary"><i class="bi bi-twitter-x"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-2 fs-6 text-secondary"><i class="bi bi-envelope-fill"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-2 fs-6 text-secondary"><i class="bi bi-linkedin"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-2 fs-6 text-secondary"><i class="bi bi-github"></i></a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-md border-bottom border-success border-4 bg-dark">
+        <div class="container">
+
+            <div class="border-end border-secondary">
+                <a class="navbar-brand logo text-secondary" href="#">tech blog<br/>dyjeciński</a>
+            </div>
+
+            <a class="text-secondary home-nav ms-3" href="#"><i class="bi bi-house-door"></i></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto justify-content-end">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kategorie
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Java</a></li>
+                            <li><a class="dropdown-item" href="#">Hibernate</a></li>
+                            <li><a class="dropdown-item" href="#">Spring</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Inne</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex me-1 ms-3">
+                    <a class="text-secondary" href="#"><i class="bi bi-search"></i></a>
+                </div>
+            </div>
         </div>
     </nav>
-    <header class="py-3 border-bottom bg-success-subtle">
-        <div class="container d-flex flex-wrap justify-content-center">
-            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-                <span class="fs-4"><i class="bi bi-body-text"></i> techblog.dyjeciński</span>
-            </a>
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-            </form>
+    <div class="border-bottom">
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-6">
+                    <h1>Blog technologiczny</h1>
+                    <p>Trendy, praktyczne wskazówki, i fascynujące kodowanie – wszystko w jednym miejscu.</p>
+                </div>
+                <div class="col-6">
+                    <ul class="nav fs-6 float-end">
+                        <li class="nav-item">
+                            <a class="nav-link px-2 fs-6 text-body-tertiary"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 fs-6 text-body-tertiary"><i class="bi bi-twitter-x"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 fs-6 text-body-tertiary"><i class="bi bi-envelope-fill"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 fs-6 text-body-tertiary"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 fs-6 text-body-tertiary"><i class="bi bi-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="nav nav-underline pt-4">
+                <li class="nav-item me-3">
+                    <a class="nav-link active text-success" aria-current="page" href="#">Wszystkie</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link disabled" href="#">Java</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link disabled" href="#">Hibernate</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link disabled" href="#">Spring</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link disabled" aria-disabled="true">Inne</a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </div>
 </div>
 </body>
 </html>
